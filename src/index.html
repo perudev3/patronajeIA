@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drag Pattern</title>
+
+    <script type="module" src="/main.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+      }
+
+      #canvas {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background: #fff;
+        border: 2px dashed #ccc;
+        overflow: hidden;
+      }
+
+      .point {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: #4f46e5;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: grab;
+        border-radius: 8px;
+        user-select: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Arrastra los puntos</h3>
+
+    <div id="canvas"></div>
+  </body>
+</html>
